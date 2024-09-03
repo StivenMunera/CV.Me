@@ -1,0 +1,130 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+h4{
+    color: #007BFF;
+    text-decoration:underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+p, li {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Imagen del perfil */
+.fotografia {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    margin: 20px auto;
+    box-shadow: 0 0 20px #0007;
+}
+
+/* Encabezado (nombre) */
+header.nombre {
+    text-align: center;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+/* Secciones del CV */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor general */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Secciones estilo */
+section.Datos-per, section.experiencia, section.perfil {
+    background-color: #e8f0fe;
+    width: 40%;
+}
+
+section.referencias {
+    background-color: #e8f0fe;
+    width: 40%;
+    float: right;
+}
+
+section.estudios {
+    background-color: #e8f0fe;
+    width: 40%;
+    float: right;
+    margin-top: -20px;
+}
+
+section.footer {
+    background-color: #e8f0fe;
+    width: 40%;
+    border-style: solid;
+    border-color: #333;
+}
+
+
+section h2 {
+    font-size: 24px;
+    color: #007BFF;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    /* Colocar el diseño en una sola columna */
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p, li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+
+
+}
